@@ -1,5 +1,45 @@
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --dyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+    --fonte-principal: 'DM Sans', sans-serif;
+    --font-family1: 'Nunito Sans', sans-serif;
+    --font-family: 'Poppins', sans-serif;
+}
 
+body {
+    background-color: var(--cream);
+    height: 395px;
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    align-content: center;
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.my_balance {
+    background-color: var(--soft-red);
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
 
+}
+
+.spending{
+    background-color:white;
+    width: 40%;
+    height: 200px;
+    border-radius: 10px;
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

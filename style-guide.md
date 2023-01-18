@@ -2,7 +2,7 @@
 
 ## Layout
 
-The designs were created to the following widths:
+The designs were created to the follo wing widths:
 
 - Mobile: 375px
 - Desktop: 1440px
@@ -29,5 +29,5 @@ The designs were created to the following widths:
 
 ### Font
 
-- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans);
 - Weights: 400, 700
