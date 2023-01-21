@@ -20,8 +20,9 @@
   <title>Frontend Mentor | Expenses chart component</title>
   <style type="text/css">
 		.chart_box {
-			width: 200%;
+			width: 90%;
       height: 200px;
+      margin-left: 10px;
     
 		}
 	</style>
@@ -47,11 +48,20 @@
   </header>
   
     <div class="spending">
-      <p>Spending - Last 7 days</p>
+      <p class="text">Spending - Last 7 days</p>
       <div class="chart_box">
         <canvas id="myChart" class="myChart"></canvas>
+        <hr>
+        <p>Total this month</p>
+          <div>$478.33</div>
+
       </div>
+      
     </div>
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"
 		integrity="sha512-OD9Gn6cAUQezuljS6411uRFr84pkrCtw23Hl5TYzmGyD0YcunJIPSBDzrV8EeCiFxGWWvtJOfVo5pOgB++Jsag=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -70,6 +80,4 @@ $478.33
 + 2.4 %
 from last month
 
-< div class="attribution">
-  Challenge by < a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</>.
-  Coded by < a href="#"> Your Name Here</>.
+ 

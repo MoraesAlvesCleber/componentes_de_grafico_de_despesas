@@ -23,19 +23,22 @@ body {
 .my_balance {
     background-color: var(--soft-red);
     width: 36%;
-    height: 60px;
+    height: 64px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 100px;
+     
 }
 .titulo{
     font-size: 8px;
-    margin: 5px 0;
+    margin: 7px 0;
     font-weight: 100;
 }
 .resultado{
     font-weight: 500;
+    margin-bottom: 5px;
 }
 
 .balance{
@@ -55,8 +58,18 @@ svg{
 .spending{
     background-color:white;
     width:36%;
-    height: 200px;
+    height: 300px;
     border-radius: 10px;
 
 }
- 
+.text{
+    font-size: 18px;
+    font-weight:700;
+    font-Family: var(--fonte-principal);
+    margin: 20px 10px 0 24px;
+}
+ hr{
+    width: 90%;
+    border-color: var(--cream);
+    opacity: 0.5;
+ }
