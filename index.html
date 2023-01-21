@@ -19,13 +19,12 @@
 
   <title>Frontend Mentor | Expenses chart component</title>
   <style type="text/css">
-		.chart_box {
-			width: 90%;
-      height: 200px;
+    .chart_box {
+      width: 90%;
+      height: 150px;
       margin-left: 10px;
-    
-		}
-	</style>
+    }
+  </style>
 
 </head>
 
@@ -33,8 +32,8 @@
 
   <header class="my_balance">
     <div class="balance">
-      <h1 class="titulo">My balance</h1>
-      <p class="resultado">$921.48</p>
+      <h1 class="title">My balance</h1>
+      <p class="result">$921.48</p>
     </div>
 
     <figure>
@@ -46,26 +45,38 @@
       </svg>
     </figure>
   </header>
-  
-    <div class="spending">
-      <p class="text">Spending - Last 7 days</p>
-      <div class="chart_box">
-        <canvas id="myChart" class="myChart"></canvas>
-        <hr>
-        <p>Total this month</p>
-          <div>$478.33</div>
 
-      </div>
-      
+  <div class="spending-weekly">
+
+    <p class="text-weekly">Spending - Last 7 days</p>
+
+    <div class="chart_box">
+      <canvas id="myChart" class="myChart"></canvas>
     </div>
 
+    <hr>
+
+    <div class="this-month">
+      <p class="title-spending">Total this month</p>
+      <div class="spending-totals">$478.33</div>
+    </div>
+
+    <div class="last-month">
+      <div class="last-value">+ 2.4 %</div>
+      <p class="last-totals">from last month</p>
+    </div>
+
+  </div>
+
+  </div>
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"
-		integrity="sha512-OD9Gn6cAUQezuljS6411uRFr84pkrCtw23Hl5TYzmGyD0YcunJIPSBDzrV8EeCiFxGWWvtJOfVo5pOgB++Jsag=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <script src="/js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"
+    integrity="sha512-OD9Gn6cAUQezuljS6411uRFr84pkrCtw23Hl5TYzmGyD0YcunJIPSBDzrV8EeCiFxGWWvtJOfVo5pOgB++Jsag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
@@ -79,5 +90,3 @@ $478.33
 
 + 2.4 %
 from last month
-
- 

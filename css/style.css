@@ -1,4 +1,5 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css);
+
 :root {
     --soft-red: hsl(10, 79%, 65%);
     --dyan: hsl(186, 34%, 60%);
@@ -12,7 +13,7 @@
 }
 
 body {
-    background-color: var(--cream); 
+    background-color: var(--cream);
     height: 395px;
     display: grid;
     gap: 10px;
@@ -29,47 +30,82 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 100px;
-     
+
 }
-.titulo{
+
+.title {
     font-size: 8px;
     margin: 7px 0;
     font-weight: 100;
 }
-.resultado{
+
+.result {
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-.balance{
+.balance {
     font-family: 'Poppins', sans-serif;
     color: white;
     display: grid;
     justify-items: start;
     margin: 0 20px;
-    
+
 }
 
-svg{
+svg {
     width: 38px;
     margin: 0 20px;
 }
 
-.spending{
-    background-color:white;
-    width:36%;
+.spending-weekly {
+    background-color: white;
+    width: 36%;
     height: 300px;
     border-radius: 10px;
 
 }
-.text{
+
+.text-weekly {
     font-size: 18px;
-    font-weight:700;
+    font-weight: 700;
     font-Family: var(--fonte-principal);
     margin: 20px 10px 0 24px;
 }
- hr{
+
+hr {
     width: 90%;
     border-color: var(--cream);
+    opacity: 0.3;
+}
+
+.title-spending {
+    font-family: var(--fonte-principal);
+    font-size: 10px;
     opacity: 0.5;
- }
+}
+.this-month{
+    margin: 20px 15px;
+}
+
+.spending-totals {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 26px;
+
+}
+.last-month{
+    display: grid;
+    justify-items: end;
+}
+.last-value{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 10px;
+
+}
+.last-totals{
+    font-family: var(--fonte-principal);
+    font-size: 10px;
+    opacity: 0.5;
+}
