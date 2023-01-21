@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="https://www.gstatic.com/charts/loader.js">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +18,13 @@
     rel="stylesheet">
 
   <title>Frontend Mentor | Expenses chart component</title>
-  <script>
-    google.charts.load('current',{'packages':['corechart'],'language': 'pt'});
-    google.charts.setOnloadCallback(desenhaGraficos);
-  </script>
+  <style type="text/css">
+		.chart_box {
+			width: 200%;
+      height: 200px;
+    
+		}
+	</style>
 
 </head>
 
@@ -40,41 +44,32 @@
         </g>
       </svg>
     </figure>
-    <script src="/js/main.js"></scrip>
   </header>
-
-  <div class="spending">
-    <p>Spending - Last 7 days</p> 
-    <div class="graph_column"></div>
-
-
-  </div>
-
-
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
+    <div class="spending">
+      <p>Spending - Last 7 days</p>
+      <div class="chart_box">
+        <canvas id="myChart" class="myChart"></canvas>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"
+		integrity="sha512-OD9Gn6cAUQezuljS6411uRFr84pkrCtw23Hl5TYzmGyD0YcunJIPSBDzrV8EeCiFxGWWvtJOfVo5pOgB++Jsag=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="/js/main.js"></script>
 </body>
 
 </html>
+My balance
+$921.48
+
+
+
+Total this month
+$478.33
+
++ 2.4 %
+from last month
+
+< div class="attribution">
+  Challenge by < a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</>.
+  Coded by < a href="#"> Your Name Here</>.

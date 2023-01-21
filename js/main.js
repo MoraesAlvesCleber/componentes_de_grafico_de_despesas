@@ -1,19 +1,32 @@
-var table = google.visualization.arrayToDataTable(
-    [
-    ['days','amount'],
-    ['mon','17.45'],
-    ['tue', '34,91'],
-    ['wed','52.36'],
-    ['thu','31.07'],
-    ['fri','23.39'],
-    ['sat',' 43.28'],
-    ['sun','25.48']
-    ]);
+const ctx = document.getElementById('myChart').getContext('2d');
 
-    var graph = new google.visualization.ColumnChart(
-    document.getElementById('graph_column'));
-    graph.draw(table);
 
-    
-    
-    
+const chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'],
+        datasets: [{
+            label: '$',
+            backgroundColor: ['red', 'green', 'black', 'blue', 'yellow', 'pink', 'purple'],
+            data: [ 17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48]
+        }],
+    },
+    options: {
+        animations: {
+            tension: {
+              duration: 8000,
+              easing: 'linear',
+              from: 1,
+              to: 0,
+              loop: true
+            }
+          },
+          scales: {
+            y: { // defining min and max so hiding the dataset does not change scale range
+              min: 0,
+              max: 100
+            }
+          }
+      
+    }
+});
