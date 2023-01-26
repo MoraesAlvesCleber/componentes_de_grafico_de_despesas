@@ -122,3 +122,37 @@ hr {
     font-size: 10px;
     opacity: 0.5;
 }
+
+@media screen and (max-width: 1200px) {
+
+    .my_balance {
+        width: 375px;
+        height: 120px;
+        margin-top: 500px;
+    }
+
+    .title {
+        font-size: 19px;
+    }
+
+    .result {
+        font-size: 33px;
+    }
+
+    svg {
+        width: 95px;
+
+    }
+
+    .spending-weekly {
+
+        width: 370px;
+        height: 580px;
+    }
+
+    .text-weekly {
+        font-size: 26px;
+    }
+
+    
+}

@@ -31,4 +31,11 @@ const chart = new Chart(ctx, {
   }
 });
 var valores = chart.data.datasets[0].data;
+let seg = valores[0];
+let ter = valores[1];
+let qua = valores[2];
+let qui = valores[3];
+let sex = valores[4];
+let sab = valores[5];
+let dom = valores[6];
  
