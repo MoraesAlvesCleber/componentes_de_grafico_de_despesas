@@ -24,22 +24,23 @@ body {
 .my_balance {
     background-color: var(--soft-red);
     width: 36%;
-    height: 64px;
+    height: 85px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 200px;
 
 }
 
 .title {
-    font-size: 8px;
+    font-size: 12px;
     margin: 7px 0;
     font-weight: 100;
 }
 
 .result {
+    font-size: 24px;
     font-weight: 500;
     margin-bottom: 5px;
 }
@@ -54,29 +55,31 @@ body {
 }
 
 svg {
-    width: 38px;
+    display: block;
+    width: 60px;
     margin: 0 20px;
 }
 
 .spending-weekly {
     background-color: white;
     width: 36%;
-    height: 300px;
+    height: 420px;
     border-radius: 10px;
 
 }
 
 .text-weekly {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 700;
     font-Family: var(--fonte-principal);
-    margin: 20px 10px 0 24px;
+    margin: 24px 10px 24px 24px;
 }
 
 hr {
     width: 90%;
     border-color: var(--cream);
     opacity: 0.3;
+    margin-top: 100px;
 }
 
 .title-spending {
@@ -112,7 +115,7 @@ hr {
 .last-value {
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 10px;
+    font-size: 14px;
     margin-bottom: 5px;
 
 }
@@ -123,16 +126,16 @@ hr {
     opacity: 0.5;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) and (min-width: 320px) {
 
     .my_balance {
-        width: 375px;
+        width: 340px;
         height: 120px;
-        margin-top: 500px;
+        margin-top: 328px;
     }
 
     .title {
-        font-size: 19px;
+        font-size: 14px;
     }
 
     .result {
@@ -146,8 +149,8 @@ hr {
 
     .spending-weekly {
 
-        width: 370px;
-        height: 580px;
+        width: 340px;
+        height: 445px;
     }
 
     .text-weekly {
